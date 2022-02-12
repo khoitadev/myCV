@@ -1,0 +1,241 @@
+:root {
+  --primary-color: #fec70b;
+  --second-color: #303030;
+  --white-color: #fff;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Poppins", sans-serif;
+  font-size: 62.5%;
+  color: var(--white-color);
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+  color: var(--second-color);
+}
+a:hover {
+  color: var(--white-color);
+}
+p {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  color: var(--white-color);
+}
+i {
+  position: relative;
+  margin: 0 8px 0 4px;
+  padding: 6px;
+  background-color: var(--white-color);
+  font-size: 1.5rem;
+  color: var(--second-color);
+  width: 2.4rem;
+  height: 2.4rem;
+  text-align: center;
+}
+i::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: var(--second-color);
+  top: 0;
+  left: -4px;
+  bottom: 0;
+  width: 4px;
+  z-index: 1;
+}
+.cv__left {
+  padding: 2.4rem;
+  background-color: var(--primary-color);
+}
+
+.cv__img {
+  position: relative;
+  right: -2.4rem;
+  bottom: -2.4rem;
+  z-index: 1;
+  text-align: right;
+  margin-right: -2.4rem;
+}
+.cv__img::before {
+  content: "";
+  display: block;
+  position: absolute;
+  border-top: 2px solid var(--second-color);
+  border-bottom: 2px solid var(--second-color);
+  border-left: 2px solid var(--second-color);
+  top: -2.4rem;
+  left: -2.4rem;
+  right: 0rem;
+  bottom: 2.4rem;
+  z-index: -1;
+}
+.cv__img::after {
+  content: "";
+  display: block;
+  position: absolute;
+  border: 2px solid var(--white-color);
+  top: 2.4rem;
+  left: 2.4rem;
+  right: -2.4rem;
+  bottom: -2.4rem;
+  z-index: -1;
+}
+.cv__img img {
+  min-width: 90%;
+  height: auto;
+}
+
+.cv__body-left {
+  padding: 6rem 2.4rem 0 2.4rem;
+}
+
+.cv__contact {
+  border-bottom: 2px solid var(--second-color);
+}
+
+.heading__left {
+  margin: 2.5rem 4rem 2.5rem 0;
+  padding: 0.6rem;
+  color: #fff;
+  background-color: var(--second-color);
+  max-width: 42rem;
+  font-size: 2.4rem;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 2px;
+}
+.edu__heading{
+  font-size: 2rem;
+  text-align: end;
+  border-bottom: 2px solid var(--white-color);
+  margin: 1.6rem 4rem 1.6rem -4.8rem;
+  color: var(--second-color);
+  font-weight: 700;
+}
+.edu__title{
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+.edu__title + .text {
+  text-align: justify;
+}
+
+.cv__right {
+  padding: 3.2rem 4.8rem 2rem 3.2rem;
+  background-color: var(--second-color);
+}
+.cv__intro {
+  margin-left: 6rem;
+}
+.name {
+  display: flex;
+  align-items: center;
+  padding: 2rem 0 2rem 2.8rem;
+  margin: 6rem -4.8rem 0 0;
+  background-color: var(--primary-color);
+}
+.name h2 {
+  color: var(--second-color);
+  font-size: 4rem;
+  font-weight: 600;
+}
+.name span {
+  margin-left: 1.6rem;
+  background-color: var(--second-color);
+  height: 3px;
+  flex: 1;
+}
+
+.name__des {
+  display: inline-block;
+  margin-bottom: 3rem;
+  color: var(--white-color);
+  font-size: 2.4rem;
+  font-weight: 400;
+  width: 70%;
+  letter-spacing: 2px;
+  padding: 0.8rem 1.6rem;
+  border-right: 2px solid var(--white-color);
+  border-bottom: 2px solid var(--white-color);
+  border-left: 2px solid var(--white-color);
+}
+.heading__right {
+  margin: 3.5rem 0 3.5rem -3.2rem;
+  padding: 0.6rem 3.2rem;
+  background-color: var(--white-color);
+  color:var(--second-color);
+  max-width: 46rem;
+  font-size: 2.4rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.heading__title {
+  margin: 8px 0;
+  color: var(--second-color);
+  font-size: 2rem;
+  font-weight: 600;
+}
+.work__heading{
+  margin-top: 2rem;
+  font-size: 2rem;
+  color: var(--primary-color);
+  font-weight: 700;
+}
+.work__title{
+  margin-bottom: 2rem;
+  padding: 8px 0;
+  max-width: 15rem;
+  font-size: 1.6rem;
+  color: var(--primary-color);
+  font-weight: 500;
+  border-bottom: 2px solid var(--primary-color);
+}
+.time {
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+.progress__line {
+  margin: 2rem 0;
+}
+.interests {
+  list-style: circle;
+  padding-left: 2rem;
+}
+.text {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  color: var(--second-color);
+}
+.text-toright {
+  color: var(--white-color);
+}
+.description {
+  margin-top: 1.6rem;
+  text-align: justify;
+}
+.contact__text {
+  display: flex;
+}
+.contact__line {
+  flex: 1;
+  font-size: 1.6rem;
+  font-weight: 500;
+  border-bottom: 2px solid var(--second-color);
+}
+.ref {
+  display: flex;
+}
+.ref-left, .ref-right {
+  flex: 1;
+}
