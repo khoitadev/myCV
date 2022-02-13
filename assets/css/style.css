@@ -239,3 +239,15 @@ i::after {
 .ref-left, .ref-right {
   flex: 1;
 }
+
+@media only screen and (max-width: 739px) {
+  .cv__left{
+    overflow: hidden;
+  }
+  .cv__intro {
+    margin-left: 0;
+  }
+  .cv__body-left {
+    padding-left: 0.8rem;
+  }
+}
